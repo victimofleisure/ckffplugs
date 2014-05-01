@@ -1,0 +1,3 @@
+The clip player was updated to fix a potential crash which only applied to FFRend. No other changes were made.
+
+1. Opening a clip by its path in FFRend (as opposed to via the player's Bank/Clip parameters) could potentially crash if seeking was done on the previous clip. The bug was demonstrable by opening a clip, pausing FFRend, setting the player's Position parameter to one, opening a SHORTER clip via drag/drop, and unpausing FFRend. This same bug also applied to opening clips via the Recent Clips parameter. Fixed in FFPlayer version 2.100.
